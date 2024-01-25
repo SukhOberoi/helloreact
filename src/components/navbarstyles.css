@@ -1,0 +1,131 @@
+.NavbarItems{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px;
+    box-shadow: 0 5px 15px 0 rgba(0,0,0,.25);
+    border-radius: 13px;
+    width:95%;
+    height: 80px;
+    z-index: 99;
+    position: fixed;
+    top:20px;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 9999;
+    background-color: white;
+}
+
+.navbar-logo{
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.navlist{
+    list-style: none;
+    display: grid;
+    grid-template-columns:repeat(6, auto);
+    grid-gap: 10px;
+    align-items: center;
+}
+
+.nav-links  {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 0.7rem 1rem;
+    white-space: nowrap ;
+    border-radius: 0.3rem;
+}
+
+.nav-links:hover{
+    background-color:darkslateblue;
+    color: white;
+    transition: all 0.2s ease-in-out;
+}
+
+.nav-links i{
+    padding-right: 5px;
+}
+
+button{
+    padding: 0.5rem 1rem;
+    white-space: nowrap;
+    border-radius: 0.3rem;
+    font-size: 1rem;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+button:hover{
+    background-color: darkslateblue;
+    color:white;
+}
+
+.hamburgir{
+    display:none
+}
+
+.logo-home{
+    text-decoration: none;
+    color:black
+}
+
+@media screen and (max-width: 950px) {
+    .navlist{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: stretch;
+        background-color: white;
+        position: absolute;
+        top: 100px;
+        left: -100%;
+        opacity: 0;
+        width:100%;
+        padding: 0px 0px 30px 0px;
+        transition: 0.3s ease-in-out;
+        border-radius: 13px;
+        padding-top: 25px;
+        box-shadow: 0 5px 15px 0 rgba(0,0,0,.25);;
+    }
+
+    .navlist.active{
+        left : 0px;
+        opacity: 1;
+        z-index: -1;
+
+        transition: 0.3s ease-in-out;
+    }
+
+    .nav-links  {
+        display:flex;
+        flex-direction: row;
+        text-decoration: none;
+        color: black;
+        font-size: 1.2rem;
+        font-weight: 500;
+        padding: 2rem 0rem;
+        margin: 0rem 1rem;
+        justify-content: center;
+        white-space: nowrap ;
+        border-radius: 0.3rem;
+        align-items: center;
+    }
+    button{
+        height: 4rem;
+        width: 10rem;
+        font-size: 1.2rem;
+        font-weight: 500;
+        align-self: center;
+        margin: 0rem 1rem;
+    }
+
+    .hamburgir{
+        display:block;
+        cursor: pointer;
+    }
+}
