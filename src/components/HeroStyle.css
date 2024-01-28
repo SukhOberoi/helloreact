@@ -36,6 +36,7 @@ img{
     font-weight: 300;
     text-shadow: 1px 1px #434343;
     padding: 0.5rem 0 2rem 0;
+    text-align: center;
 }
 .half p{
     padding:0

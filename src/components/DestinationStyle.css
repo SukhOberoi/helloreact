@@ -6,12 +6,19 @@
 .destinations h1{
     font-size: 3rem;
 }
+.destinations p{
+    text-align: center;
+}
 
 .first-des{
     margin-top:4rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.reverse{
+    flex-direction: row-reverse;
 }
 
 .des-text{
@@ -53,7 +60,7 @@
     }
 
     .des-text{
-        width: 80%;
+        width: 90%;
         text-align: start;
     }
 
@@ -63,7 +70,12 @@
 
     .des-images{
         padding-bottom: 1.2rem;
-        width: 80%;
+        width: 90%;
+        
+    }
+
+    .des-images img{
+        height: 250px;
     }
 
     .first-des{

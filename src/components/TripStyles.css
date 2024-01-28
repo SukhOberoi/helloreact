@@ -1,0 +1,70 @@
+.trip{
+    text-align: center;
+    margin: 4rem 6rem;
+}
+.trip h1{
+    font-size: 3rem;
+}
+
+.trip p{
+    text-align: center;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+    margin:0px 2rem;
+}
+
+.t-card{
+    border-radius: 10px;
+    background-color: azure;
+    width: 32%;
+    padding: 1rem;
+    box-shadow: 4px 4px 5px 3px rgba(0,0,0, 0.5);
+    cursor: pointer;
+}
+
+.t-img{
+    overflow: hidden;
+    border-radius: 8px;
+    height: 200px;
+}
+
+img{
+    border-radius: 8px;
+    transition: 0.25s ease-in-out;
+    object-fit: cover;
+}
+
+.t-card:hover img{
+    transform: scale(1.2);
+
+}
+
+.t-text{
+    margin: 0.6rem 0rem;
+    text-align: justify;
+}
+
+h4{
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width:950px) {
+    .trip{
+        margin: 2rem 1rem;
+    }
+
+    .cards{
+        flex-direction: column;
+        align-items: center;
+
+        margin: 0;
+    }
+
+    .t-card{
+        width: 90%;
+        margin-bottom: 1.2rem;
+    }
+}

@@ -2,6 +2,8 @@ import Hero from '../components/Hero';
 import Navbar from '../components/Navbar';
 import image from "../assets/12.jpg"
 import Destination from '../components/Destination';
+import Trip from '../components/Trip.js';
+import Footer from '../components/Footer.js';
 
 function Home(){
     return(
@@ -17,6 +19,8 @@ function Home(){
             linkText = "Travel Now"
             />
             <Destination />
+            <Trip/>
+            <Footer/>
         </>
     )
 }

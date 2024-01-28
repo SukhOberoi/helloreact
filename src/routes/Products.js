@@ -1,6 +1,8 @@
 import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
 import image from "../assets/2.jpg"
+import Footer from '../components/Footer';
+import Trip from '../components/Trip';
 
 function Products(){
     return(
@@ -12,6 +14,8 @@ function Products(){
             heading = "Our Products and Services"
             body = ""
             />
+        <Trip/>
+        <Footer/>
         </>
     )
 }

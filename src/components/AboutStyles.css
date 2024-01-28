@@ -1,0 +1,22 @@
+.about-text{
+    margin: 3rem 4rem;
+}
+
+h2{
+    padding: 1rem 0;
+    font-size: 2rem;
+}
+
+p{
+    text-align: justify;
+}
+
+.after-dest{
+    margin-top: 2rem;
+}
+
+@media screen and (max-width: 650px) {
+    .about-text{
+        margin: 2rem 1.5rem; 
+    }
+}
