@@ -54,7 +54,7 @@ jobs:
           npm run build
           
           # Serve with Nginx
-          sudo cp -r build /var/www/html/helloreact
+          sudo cp -r build/* /var/www/html/helloreact
           sudo systemctl restart nginx
           
           # Health Check
