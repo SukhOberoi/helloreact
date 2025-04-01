@@ -3,7 +3,7 @@ name: Deploy to EC2
 on:
   push:
     branches:
-      - main
+      - master
   workflow_dispatch:
     inputs:
       rollback_commit:
@@ -45,8 +45,8 @@ jobs:
             git fetch
             git checkout ${{ github.event.inputs.rollback_commit }}
           else
-            git checkout main
-            git pull origin main
+            git checkout master
+            git pull origin master
           fi
           
           # Install dependencies and build React app
