@@ -37,6 +37,7 @@ jobs:
           
           # Backup current build
           if [ -d "build" ]; then
+            rm -rf build_backup
             mv build build_backup
           fi
           
