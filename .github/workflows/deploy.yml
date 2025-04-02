@@ -64,6 +64,7 @@ jobs:
             echo "Health check failed! Rolling back..."
             rm -rf build
             mv build_backup build
+            sudo cp -r build/* /var/www/html/helloreact
             sudo systemctl restart nginx
           else
             echo "Deployment successful!"
